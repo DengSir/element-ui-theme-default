@@ -16,14 +16,14 @@
 
 @component-namespace el {
   @b menu {
-    border-radius: 2px;
+    border-radius: 0px;
     list-style: none;
     position: relative;
     margin: 0;
     padding-left: 0;
     background-color: var(--menu-item-fill);
     @utils-clearfix;
-    
+
     & li {
       list-style: none;
     }
@@ -39,7 +39,7 @@
           background-color: var(--color-extra-light-black);
         }
       }
-      
+
       & .el-submenu .el-menu {
         background-color: var(--color-base-black);
 
@@ -140,7 +140,7 @@
   }
   @b menu-item {
     @extend menu-item;
-    
+
     & [class^="el-icon-"] {
       vertical-align: baseline;
       margin-right: 10px;
@@ -158,7 +158,7 @@
       color: var(--color-primary);
     }
   }
-  
+
   @b submenu {
     @e title {
       position: relative;
